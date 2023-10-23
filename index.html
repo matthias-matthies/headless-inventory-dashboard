@@ -14,11 +14,33 @@
                 x-text="msg"
             />
         </div>
-        <div class="text-center">
-            <button class="btn" x-data @click="alert('I\'ve been clicked!')">Click Me</button>
+        <div x-data="dropdown">
+            <button @click="toggle">Expand</button>
+
+            <span x-show="open" x-transition>Content...</span>
         </div>
 
-        <script type="module" src="/src/main.ts"></script>
+        <div x-data="dropdown">
+            <button @click="toggle">Expand</button>
+
+            <span x-show="open" x-transition>Some Other Content...</span>
+        </div>
+
+        <div x-data>
+            <template x-for="tab in $store.tabs.items">
+                <p
+                    x-text="tab"
+                    x-bind:class="tab === $store.tabs.current ? 'text-primary' : ''"
+                />
+            </template>
+        </div>
+
+        <div x-data>
+            <button @click="$store.tabs.current = 'first'">First Tab</button>
+            <button @click="$store.tabs.current = 'second'">Second Tab</button>
+            <button @click="$store.tabs.current = 'third'">Third Tab</button>
+        </div>
 
     </body>
+    <script defer type="module" src="/src/main.ts"></script>
 </html>
