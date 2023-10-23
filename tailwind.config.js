@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const daisyui = require('daisyui')
 module.exports = {
     content: [
         "./index.html", // don't forget to add other files and directories
@@ -7,5 +8,5 @@ module.exports = {
     theme: {
         extend: {},
     },
-    plugins: [],
+    plugins: [daisyui],
 }

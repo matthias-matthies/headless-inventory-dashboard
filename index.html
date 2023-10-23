@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-</head>
-<body>
-<div x-data="{msg: 'Vite + TailwindCSS + AlpineJS'}">
-    <h1
-        class="text-center text-3xl text-blue-700 leading-loose"
-        x-text="msg"
-    ></h1>
-</div>
-<script type="module" src="/src/main.ts"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vite App</title>
+    </head>
+    <body>
+
+        <div x-data="{msg: 'Vite + TailwindCSS + AlpineJS + DaisyUI'}">
+            <h1
+                class="text-center text-3xl text-blue-700 leading-loose"
+                x-text="msg"
+            />
+        </div>
+        <div class="text-center">
+            <button class="btn" x-data @click="alert('I\'ve been clicked!')">Click Me</button>
+        </div>
+
+        <script type="module" src="/src/main.ts"></script>
+
+    </body>
 </html>
