@@ -10,4 +10,4 @@ URL: https://headless-inventory.vercel.app/api/api/
 Beispiel: https://headless-inventory.vercel.app/api/api/items
 
 Für arbeit am Projekt am besten Postman installieren. Damit können API Anfragen simuliert werden.
-
+für api doc: [https://github.com/matthias-matthies/headless-inventory-dashboard/tree/main/docs/api](https://github.com/matthias-matthies/headless-inventory-dashboard/tree/main/docs/api)
