@@ -3,7 +3,7 @@ The Item Controller API allows you to perform CRUD operations on items and their
 ## Base URL
 
 ```
-[(http://headless-inventory.vercel.app/api)](http://headless-inventory.vercel.app/api)
+http://headless-inventory.vercel.app/api
 ```
 
 ## Endpoints

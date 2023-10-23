@@ -3,7 +3,7 @@ The Group Controller API allows you to perform CRUD operations on groups.
 ## Base URL
 
 ```
-[http://headless-inventory.vercel.app/api](http://headless-inventory.vercel.app/api)
+http://headless-inventory.vercel.app/api
 ```
 
 ## Endpoints
